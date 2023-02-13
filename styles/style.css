@@ -22,13 +22,13 @@ body {
 /* removing the default css of a tags */
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* removing the default css of li tags */
 li {
     list-style: none;
 }
-
 /* Navigation */
 nav {
     display: flex;
@@ -75,6 +75,11 @@ nav ul li:first-child a {
     padding: 10px 40px;
     border: none;
     box-shadow: 1px 1px 5px 0px #4e4e50, 1px 1px 1px 0px #d3d3d3 inset;
+    cursor: pointer;
+}
+
+.nav-right-section button:hover {
+    box-shadow: 1px 1px 5px 0px #4e4e50, 1px 1px 5px 0px #4e4e50 inset;
 }
 
 /* Designing Main */
@@ -132,6 +137,7 @@ main {
     width: fit-content;
     padding: 10px 25px;
     gap: 20px;
+    cursor: pointer;
 }
 
 .shopping-bag-section img {
@@ -258,6 +264,7 @@ main {
     gap: 20px;
     font-size: 12px;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 /*  Designing Offer Section */
@@ -304,6 +311,7 @@ main {
     border-radius: 8px;
     padding: 10px 20px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .offer div div img {
@@ -315,4 +323,154 @@ main {
     margin-bottom: 0;
     font-size: 12px;
     color: white;
+}
+
+/* Styling Product */
+.product {
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px;
+}
+
+.product-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-logo {
+    scale: 0.3;
+}
+
+.product-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-left: 50px;
+}
+
+.product-card {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background: #181a1b;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.product-img {
+    width: 75px;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    top: -40px;
+    left: 28px;
+}
+
+.product-img,
+.product-card p,
+.product-card span,
+.product-card img,
+.product-card div {
+    background-color: transparent;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.product-info p {
+    font-size: 12px;
+}
+
+.product-info p span {
+    color: #bdc0c2;
+}
+
+.product-info div {
+    background: #0a0a0b;
+    border-radius: 8px;
+    padding: 2px 6px;
+}
+
+.product-info div img {
+    width: 13px;
+    height: 13px;
+}
+
+/* Designing Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 0;
+}
+
+.footer-logo {
+    scale: 0.8;
+}
+
+ul li a {
+    font-size: 12px;
+    color: #BDC0C2;
+}
+
+ul li:first-child a {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+ul li:first-child {
+    margin-bottom: 10px;
+}
+
+.footer-subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-subscription div:first-child {
+    background-color: #181A1B;
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.footer-subscription input{
+    background-color: #181A1B;
+    border: none;
+}
+
+.subscribe-button {
+    background-color: #0A0A0B;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+
+.subscribe-button img {
+    scale: 0.8;
+}
+
+.subscribe-button p {
+    font-size: 12px;
+}
+
+.footer-subscription div:last-child img {
+    margin-right: 10px;
+    scale: 0.8;
+    cursor: pointer;
 }
